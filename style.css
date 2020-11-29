@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+	margin:0;padding:0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+	scroll-behavior: smooth;   /*important command*/
+
+}
+
+section{
+	padding: 100px;
+}
+
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: url(banner.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: space-between; /*i have to check its use*/
+	align-items: center;
+}
+
+.banner h2{
+	font-size: 3em;color: black;
+	font-weight: 500;
+	line-height: 1.5em;
+
+}
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+
+}
+.banner h3
+{
+	font-weight: 1.5em;color: #fff;font-weight: 500;font-family: 'Niconne', cursive;
+
+}
+.btn{box-shadow: 0 5px 15px #2196f3;
+	position: relative;background-color: #2196f3;
+	display: inline-block;color: #fff;margin-top: 20px;
+	padding: 10px 30px;font-size: 18px;text-transform: uppercase;
+	text-decoration: none;letter-spacing: 2px;font-weight:600;justify-content: center;display: flex;
+}
+.btn:hover{
+	  background-color: #2196f3;
+	  box-shadow: none;
+
+}
+
+img{
+	width: 300px;
+}
+
+header{
+	position: fixed;
+	top: 0;left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+header.sticky{
+	background-color: black;
+	padding:30px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.sticky .logo{
+	color: #111;
+	border:2px dotted black;
+}
+
+.sticky ul li a{
+	color: #111;
+}
+
+header .logo{
+color: black;
+font-size: 24px;
+text-transform: uppercase;
+text-decoration: none;
+font-weight: 700;
+letter-spacing: 10px;
+border-radius: 8px;
+
+
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	position: relative;list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 15px;
+	font-size: 20px;
+	color: black;
+	text-decoration: none!important;
+	font-family: 'Monoton', cursive;
+
+}
+
+/*about start*/
+
+
+.headings{
+	width: 100%;text-align: center;
+	margin-bottom: 30px;
+	color: #111;
+
+}
+
+.headings h2{
+	font-weight: 600;font-size: 50px;font-family: 'Piedra', cursive;
+
+}
+
+.d-block{
+	height: 600px!important;overflow: none;
+}
+
+/*about us ends*/
+
+
+/*menu start*/
+
+#menucontainer h2{
+   font-size: 60px;
+   font-family: 'Piedra', cursive;
+
+}
+
+
+
+
+
+
+
+/* contact us start */
+
+.heading{
+	color: white;
+	font-size: 60px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+	font-family: 'Piedra', cursive;
+
+}
+.contact{
+	padding: 100px;
+	background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, rgba(5,223,195,1) 0%);
+	text-align: center;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.imgbx2{
+	background: url(menu.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+
+}
+
+.about .contentbx {
+    background: #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+
+.redbg{
+	background: url(red.jpg)!important;
+	background-size: cover;
+	background-position: center;
+}
+
+.form .inputbx{
+	margin-bottom: 40px;
+}
+
+.form .inputbx input{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+	border-bottom: 2px solid white;
+}
+.form .inputbx input::placeholder{
+  color: white;
+}
+
+
+.form .inputbx textarea{
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300px;
+	color: white;
+	min-height: 150px;
+	border-bottom: 2px solid white;
+}
+.form .inputbx textarea::placeholder{
+  color: white;
+}
+
+.form .inputbx input[type="submit"]{
+	width: 150px;
+	background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, rgba(5,223,195,1) 0%);
+	color: #111;
+	cursor: pointer;
+
+}
+/* contact us end */
+
+/* address start */
+
+.addcontainer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+
+
+.contactInfo{
+min-width: 50%;
+}
+
+.contactInfoBx{
+	position: relative;
+}
+
+.contactInfoBx .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.icon{
+	min-width: 40px;
+	padding-top: 4px;
+	color: #111;
+	font-size: 24px;
+}
+
+.text{
+	margin-left: 20px;
+	font-size: 30px;
+	color: #111;
+
+}
+
+.text h3{
+	font-weight: 500;
+	color: #2196f3;
+	margin-bottom: 0;
+}
+
+
+/* address end */
+
+
+@media (max-width: 991px)
+.about .contentbx, .about .imgbx {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>CORONA API REPORT</title>
+</head>
+<body>
+
+<table width= "500px" border="1px" id="global-wise" >
+<tr>
+
+    <td colspan="2"><h2>Global data</h2></td>
+
+</tr>
+
+
+
+</table>
+
+<br>
+
+<table width= "500px" border="1px" id="countries-wise" >
+    <tr>
+
+        <td class="" colspan="5"><h2>Countries data</h2></td>
+
+
+    </tr>
+    <th>S.no.</th>
+        <th>Country</th>
+        <th>TotalDeaths</th>
+        <th>TotalRecovered</th>
+        <th>Date</th>
+
+
+
+    </table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $.ajax({
+        url :"MENU ROUGH.json",
+        type : "get",
+        dataType : "JSON",
+        success : function(Combos){
+            // used is for displaying in the console and not important
+            console.log(data);
+
+            $.each(data.Global, function(key, value){
+            $("#global-wise").append("<tr><td>" + key + "</td><td>" + value + "</td></tr>")
+            });
+
+            $.each(data.Countries, function(key, value){
+                $("#countries-wise").append("<tr><td>" + key + "</td><td>" + value.Country + "</td><td>"+ value.TotalDeaths + "</td><td>" + value.TotalRecovered + "</td><td>" + value.Date + "</td></tr>")
+
+            });
+        }
+
+    });
+</script>
+
+</body>
+</html>
