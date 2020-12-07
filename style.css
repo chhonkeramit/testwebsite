@@ -11,9 +11,12 @@
 	box-sizing: border-box;
 	font-family: 'poppins',sans-serif;
 	scroll-behavior: smooth;   /*important command*/
-
+    
 }
 
+html{
+	margin-right: -190px;
+}
 
 section{
 	padding: 100px;
@@ -212,18 +215,11 @@ header .logo{
     font-size: ;
    }
 
-   .content{
-   	display: block;
-   }
+   
 
-   .testimonialBx{
-   	max-width: inherit;
-   }
+   
 
-   .workBx{
-   	width: 100%;
-   }
-
+   
    .contactInfo {
     padding-bottom: 60px;
 }
@@ -500,8 +496,12 @@ min-width: 50%;
 	padding: 10px;
 }
 
-.copyright p{
+.copyright a{
 	color: #b8b8b8;
+}
+.copyright a:hover{
+		text-decoration: none;
+
 }
 
 /*footer*/
