@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 *{
 	margin:0;padding:0;
 	box-sizing: border-box;
@@ -11,6 +13,7 @@
 	scroll-behavior: smooth;   /*important command*/
 
 }
+
 
 section{
 	padding: 100px;
@@ -72,14 +75,14 @@ header{
 }
 
 header.sticky{
-	background-color: black;
+	background-color: transparent;
 	padding:30px 100px;
-	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.9);
 }
 
 .sticky .logo{
 	color: #111;
-	border:2px dotted black;
+	/*border:2px dotted black;*/
 }
 
 .sticky ul li a{
@@ -117,6 +120,121 @@ header ul li a{
 
 }
 
+.social{
+	display: grid;
+	margin: -77px!important;
+}
+
+
+/* social icons */
+#one:hover{
+	border-radius: 50%;
+}
+#two:hover{
+	border-radius: 50%;
+}
+#three:hover{
+	border-radius: 50%;
+}
+
+/* social icons ends */
+
+
+
+/*@media screen and (max-width: 1257px) and (min-width: 918px) 
+{
+  .textBx{
+    font-size: x-small;
+       }
+}*/
+
+@media (max-width: 1084px)
+{
+header{
+	padding:40px 100px;
+      }
+
+header .logo{
+   font-size: 40px;
+}
+
+ .menu
+ {  font-size: 50px;
+ 	position: fixed;
+ 	top: 130px;
+ 	left: -100%;
+ 	display: block;
+ 	padding: 100px 50px;
+ 	text-align: center;
+ 	width: 100%;
+ 	height: 100vh;
+ 	background-color: #fff;
+ 	transition: 0.5s;
+ 	border-top: 1px solid rgba(0,0,0,0.2);
+ }
+
+
+
+ header ul li a
+ {
+ color: black;
+ font-size: 60px;
+ margin: 10px;
+  }
+
+  /*toggle button*/
+
+  .toggle
+  {
+   width: 40px;
+   height: 40px;
+   /*background-position: center;*/
+   background-image: url(images/menu.png);
+   background-repeat: no-repeat;
+   cursor: pointer;
+   
+  }
+
+  .toggle.active
+   {
+   	background: url(images/close.png);
+   	background-repeat: no-repeat;
+   	background-size: 30px;
+   	cursor: pointer;  	
+   }
+
+   .menu.active{
+   	left: 0;
+   }
+
+   .banner h2
+   {
+    font-size: ;
+   }
+
+   .content{
+   	display: block;
+   }
+
+   .testimonialBx{
+   	max-width: inherit;
+   }
+
+   .workBx{
+   	width: 100%;
+   }
+
+   .contactInfo {
+    padding-bottom: 60px;
+}
+
+
+}
+
+
+
+
+
 /*about start*/
 
 
@@ -136,22 +254,94 @@ header ul li a{
 	height: 600px!important;overflow: none;
 }
 
+
+.carousel-caption h1{
+	font-family: 'Luckiest Guy', cursive;letter-spacing: 5px;font-size: 30px;color: black;text-shadow: 2px 2px 8px #FF0000;
+}
+
 /*about us ends*/
 
 
 /*menu start*/
 
-#menucontainer h2{
-   font-size: 60px;
-   font-family: 'Piedra', cursive;
 
+/*.ftco-section {
+  padding: 7em 0; 
+font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  color: #d4d4d4;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 30px;}*/
+
+
+/*.ftco-animate {
+  opacity: 0;
+  visibility: hidden; }
+
+*/
+.col-md-7 p{
+	    color: #b8b8b8;
 }
 
 
+.ftco-tab-nav .ftco-tab-nav li{
+  padding: 0;
+  margin: 0;
+  display: inline-block !important; }
+  @media screen and (max-width: 904px) {
+    .ftco-tab-nav {
+      display: block !important;
+      margin-bottom: 10px;
+      width: 100% !important; } }
+  .ftco-tab-nav li {
+    padding: 0;
+    margin: 0 5px;
+    display: block !important; }
+    /*@media screen and (max-width: 576px) {
+      .ftco-tab-nav li {
+        display: block !important;
+        margin-bottom: 10px;
+        width: 100% !important; } }*/
+    .ftco-tab-nav li a {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: .05em;
+      color: #ccc;
+      border: 2px solid #ccc;
+      border-radius: 0 !important; }
+      .ftco-tab-nav li a.active {
+        background: none !important;
+        color: black !important;
+        border: 2px solid #000; }
 
 
+  
+  .media{
+    color: #F96D00; }
+
+.menu-item {
+  margin-bottom: 30px; }
+  .menu-item img {
+    width: 100px;
+    border-radius: 50%; }
+  .menu-item .menu-price {
+    font-family: "Playfair Display", serif;
+    font-size: 24px; }
+.media-body p {
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 2em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    line-height: 18.6px;
+      letter-spacing: 3px;
+}
 
 
+        /*menu end*/
 
 /* contact us start */
 
@@ -176,17 +366,17 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, r
     width: 100%;
     display: flex;
 }
-.imgbx2{
-	background: url(menu.jpg);
-	background-size: cover;
-	background-position: center;
-	width: 50%;
-
+.imgbx2 {
+    background: url(menu.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    background-repeat: no-repeat;
 }
 
 .about .contentbx {
     background: #162c3b;
-    padding: 100px;
+    padding: 26px;
     width: 50%;
 }
 
@@ -299,3 +489,19 @@ min-width: 50%;
     min-height: 400px;
     text-align: center;
 }
+
+
+/*footer */
+
+.copyright{
+	background: #000;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.copyright p{
+	color: #b8b8b8;
+}
+
+/*footer*/
