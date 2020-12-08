@@ -14,10 +14,11 @@
     
 }
 
+/*
 html{
 	margin-right: -190px;
 }
-
+*/
 section{
 	padding: 100px;
 }
@@ -357,30 +358,27 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, r
 	text-align: center;
 }
 
-.about {
+/* .about {
     position: relative;
     width: 100%;
     display: flex;
-}
+} */
 .imgbx2 {
     background: url(menu.jpg);
-    background-size: contain;
-    background-position: center;
+    /* background-size: contain; */
+    /* background-position: center; */
     width: 50%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	height: 400px;
+	min-width: 400px;
+	margin: 0px;
 }
 
-.about .contentbx {
-    background: #162c3b;
-    padding: 26px;
-    width: 50%;
-}
-
-.redbg{
+/* .redbg{
 	background: url(red.jpg)!important;
 	background-size: cover;
 	background-position: center;
-}
+} */
 
 .form .inputbx{
 	margin-bottom: 40px;
@@ -432,16 +430,75 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, r
 
 /* address start */
 
-.addcontainer{
-	display: flex;
-	justify-content: space-between;
+.addcontainer {
+	margin: 0;
+	/* padding: 0; */
 	width: 100%;
+	overflow: hidden;
+	background-color: #EAEDF0;
+}
+.about {
+	margin: 0 auto;
+	/* padding: 0; */
+	width: 100%;
+	min-width: 50%;
+	overflow: hidden;
+}
+.about_top_box {
+	margin-left: 100px;
+	/* padding: 0; */
+	width: 100%;
+	overflow: hidden;
 }
 
+.address_left_side, .address_googlemap {
+	float: left!important;
+	min-width: 400px;
+	width: 45%;
+	margin: 20px 1.15%;
+	/* background-color: #B2D6FF;  */
+}
 
+.punjabi_tadka {
+	/* margin-left: 20px; */
+	padding: 0px;
+	float: left!important;
+	min-width: 400px;
+	width: 400px;
+	height:450;
+	/* background: #162c3b; */
+	/* background-image: url('red.jpg'); */
+}
+.punjabi_tadka img {
+	width: 400px;
+	height: 464px;
+  }
+
+/* .about {
+	background-color: rgb(0,180,150);
+} */
+.contentbx {
+	min-width: 400px;
+	width: 400px;
+	height:450;
+}
+.form {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 60px;
+	padding: 0;
+	float: left!important;
+	min-width: 400px;
+	width: 400px;
+	height:450;
+	background: #162c3b;
+	background-image: url('red.jpg');
+    width: 50%;
+}
 
 .contactInfo{
-min-width: 50%;
+	min-width: 50%;
 }
 
 .contactInfoBx{
@@ -477,14 +534,14 @@ min-width: 50%;
 
 /* address end */
 
-
+/* 
 @media (max-width: 991px)
-.about .contentbx, .about .imgbx {
-    width: 100%;
+.about.contentbx, .about.imgbx {
+    width: 70%;
     padding: 50px;
     min-height: 400px;
     text-align: center;
-}
+} */
 
 
 /*footer */

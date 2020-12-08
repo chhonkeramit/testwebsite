@@ -849,152 +849,153 @@
 <!-- menu ends -->
 
 
+<!-- contact  -->
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact Us</h2>
+</section>
+
+<section class="about">
+  <div class="about_top_box">
+  <div class="contentbx">
+    <div class="form">
+
+    <!-- email from php  -->
+
+    <form class="" action="<?php echo $_SERVER['PHP_SELF']; ?> " method="post">
+      <div class="inputbx">
+        <input type="text" name="name" placeholder="Full Name">
+      </div>
+      <div class="inputbx">
+        <input type="email" name="email" placeholder="Email Address">
+      </div>
+
+      <div class="inputbx">
+        <textarea name="message" placeholder="Write your message here"></textarea>
+      </div>
+      <div class="inputbx">
+        <input  type="submit" name="submit" value="send">
+      </div>
+    </form>
+
+    <?php
+      if(isset($_POST['submit'])){
+      $to = "panchokitchen@gmail.com";
+      $name = $_POST['name'];
+          $email = $_POST['email'];
+          $message = $_POST['message'];
+      $headers = "From: $email";
+
+      mail($to, $name, $message, $headers);
+
+      echo "mail sent.";
+    }
+    ?>
+
+    <!-- email php end -->
+
+    </div>
+  </div>
+<!-- </div> -->
+<div class="punjabi_tadka">
+  <!-- <div class="imgbx2"></div> -->
+  <img src="menu.jpg" width="40px" height="4640px">
+</div>
+</div>
+</section>
+
+<!-- end of contact us  -->
+
+<!-- address start -->
+<section class="addcontainer">
+<div>
+  <div class="address_left_side">
+
+    <div class="address">
+      <div class="contactInfo">
+        <h3>Contact Info</h3>
+        <div class="contactInfoBx">
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>65 University Ave East<br>
+              Waterloo, ON N2J 2V8<br>
+              Canada
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-phone"></i>
+
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+1-226-666-7860</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="icon">
+              <i class="fa fa-envelope-o"></i>
+
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>panchokitchen@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+  <div class="address_googlemap">
+    <!-- address map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5790.748071319008!2d-80.53776717196976!3d43.47366400234008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x882bf401ad6dac05%3A0xbc0d83244f312792!2sUniversity%20of%20Waterloo%2C%20Waterloo%2C%20ON%2C%20Canada!3m2!1d43.4731293!2d-80.541687!4m5!1s0x882bf38b31259673%3A0xd4bb25dfb9fe935f!2s65%20University%20Ave%20E%2C%20Waterloo%2C%20ON%20N2J%202V8%2C%20Canada!3m2!1d43.477146999999995!2d-80.521126!5e0!3m2!1sen!2sin!4v1606666234662!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <!-- address map end -->
+  </div>
+</div>
+</section>
+<!-- address ends -->
 
 
-	<!-- contact  -->
+<!-- footer start -->
 
-		<section class="contact" id="contact">
-			<h2 class="heading">Contact Us</h2>
+<div class="copyright">
+<h5>Copyright © 2020 papa pancho's kitchen (Indian street food). All Rights Reserved.</h5>
+<p><a href="https://amitsinghchhonker.com/">Developed by AMIT KUMAR SINGH</a></p>
+</div>
 
-		</section>
-
-		<section class="about">
-			<div class="contentbx redbg">
-				<div class="form">
-
-					<!-- email from php  -->
-
-	<form class="" action="<?php echo $_SERVER['PHP_SELF']; ?> " method="post">
-						<div class="inputbx">
-
-						<input type="text" name="name" placeholder="Full Name">
-						</div>
-										<div class="inputbx">
-						<input type="email" name="email" placeholder="Email Address">
-						</div>
-
-									 <div class="inputbx">
-										<textarea name="message" placeholder="Write your message here"></textarea></div>
-									<div class="inputbx">
-										<input  type="submit" name="submit" value="send">
-
-										 </div>
-					</form>
-
-		 <?php
-	     if(isset($_POST['submit'])){
-			 $to = "panchokitchen@gmail.com";
-			 $name = $_POST['name'];
-	         $email = $_POST['email'];
-	         $message = $_POST['message'];
-			 $headers = "From: $email";
-
-			 mail($to, $name, $message, $headers);
-
-			 echo "mail sent.";
-		 }
-?>
-
-<!-- email php end -->
-
-
-				</div>
-			</div>
-			<div class="imgbx2"></div>
-		</section>
-
-		<!-- end of contact us  -->
-
-		<!-- address start -->
-    <section class="addcontainer">
-
-			<div class="address">
-
-				<div class="content">
-					<div class="contactInfo">
-						<h3>Contact Info</h3>services
-						<div class="contactInfoBx">
-							<div class="box">
-								<div class="icon">
-									<i class="fa fa-map-marker"></i>
-								</div>
-								<div class="text">
-									<h3>Address</h3>
-									<p>65 University Ave East<br>
-									Waterloo, ON N2J 2V8<br>
-									Canada
-									</p>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="icon">
-									<i class="fa fa-phone"></i>
-
-								</div>
-								<div class="text">
-									<h3>Phone</h3>
-									<p>+1-226-666-7860</p>
-								</div>
-							</div>
-
-							<div class="box">
-								<div class="icon">
-									<i class="fa fa-envelope-o"></i>
-
-								</div>
-								<div class="text">
-									<h3>Email</h3>
-									<p>panchokitchen@gmail.com</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				</div>
-
-			</div>
-
-			<div class="googlemap">
-				<!-- address map -->
-		<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d5790.748071319008!2d-80.53776717196976!3d43.47366400234008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x882bf401ad6dac05%3A0xbc0d83244f312792!2sUniversity%20of%20Waterloo%2C%20Waterloo%2C%20ON%2C%20Canada!3m2!1d43.4731293!2d-80.541687!4m5!1s0x882bf38b31259673%3A0xd4bb25dfb9fe935f!2s65%20University%20Ave%20E%2C%20Waterloo%2C%20ON%20N2J%202V8%2C%20Canada!3m2!1d43.477146999999995!2d-80.521126!5e0!3m2!1sen!2sin!4v1606666234662!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			<!-- address map end -->
-			</div>
-    </section>
-		<!-- address ends -->
-
-
-		<!-- footer start -->
-
-		<div class="copyright">
-		<h5>Copyright © 2020 papa pancho's kitchen (Indian street food). All Rights Reserved.</h5>
-		<p><a href="https://amitsinghchhonker.com/">Developed by AMIT KUMAR SINGH</a></p>
-	</div>
-
-		<!-- footer ends -->
+<!-- footer ends -->
 
 
 
 <script type="text/javascript">
-		window.addEventListener('scroll', function () {
-			var header = document.querySelector('header');
-			header.classList.toggle('sticky', window.scrollY > 0);
-		});
+  window.addEventListener('scroll', function () {
+    var header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
 
 
-		// toggle function 
+  // toggle function 
 
-		function toggleclick() {
-			var a = document.querySelector('.toggle');
-			var menu = document.querySelector('.menu');
+  function toggleclick() {
+    var a = document.querySelector('.toggle');
+    var menu = document.querySelector('.menu');
 
-			a.classList.toggle('active');
-			menu.classList.toggle('active');
+    a.classList.toggle('active');
+    menu.classList.toggle('active');
 
-		}
+  }
 
-	</script>
+</script>
+
 
 </body>
 </html>
