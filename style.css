@@ -141,6 +141,12 @@ header ul li a{
 	border-radius: 50%;
 }
 
+.textBx{
+    padding-right: inherit;
+}
+
+
+
 /* social icons ends */
 
 
@@ -445,7 +451,8 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, r
 	overflow: hidden;
 }
 .about_top_box {
-	margin-left: 100px;
+	margin-left: 25%;
+	margin-right: 20%;
 	/* padding: 0; */
 	width: 100%;
 	overflow: hidden;
@@ -486,7 +493,7 @@ background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(105,105,161,1) 0%, r
 	margin-top: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
-	margin-right: 60px;
+	margin-right: 0px;
 	padding: 0;
 	float: left!important;
 	min-width: 400px;
