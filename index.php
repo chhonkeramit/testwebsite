@@ -45,9 +45,9 @@
 		</div>
 
 		<div class="social">
-				<img id="one" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/facebook.png">
-				<img id="two" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/instagram-sketched.png">
-				<img id="three" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/call.png">
+					<a href="https://www.facebook.com/papapanchos"> <img id="one" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/facebook.png"></a>
+				<a href="https://www.instagram.com/panchokitchen/"><img id="two" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/instagram-sketched.png"></a>
+				<a href="#phone"><img id="three" style="width: 60px;height: 60px;cursor: pointer;margin: 10px;" src="socialicon/call.png"></a>
 			
 			</div>
 	</section>
@@ -907,7 +907,7 @@
 <!-- end of contact us  -->
 
 <!-- address start -->
-<section class="addcontainer">
+<section class="addcontainer" id="phone">
 <div>
   <div class="address_left_side">
 
